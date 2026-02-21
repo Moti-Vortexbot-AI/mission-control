@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "env": {
+    "OBSIDIAN_VAULT_ROOT": "/Users/openclaw111/.openclaw"
+  }
+}
