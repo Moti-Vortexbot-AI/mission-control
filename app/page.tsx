@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Calendar, CheckSquare, Users, Home, FileText } from 'lucide-react'
+import { Calendar, CheckSquare, Users, Home as HomeIcon, FileText } from 'lucide-react'
 import TasksBoard from '@/components/TasksBoard'
 import CalendarView from '@/components/CalendarView'
 import MemoryUI from '@/components/MemoryUI'
@@ -13,7 +13,7 @@ const tabs = [
   { id: 'calendar', label: 'Calendar', icon: Calendar },
   { id: 'memory', label: 'Memory', icon: FileText },
   { id: 'team', label: 'Team', icon: Users },
-  { id: 'office', label: 'Office', icon: Home },
+  { id: 'office', label: 'Office', icon: HomeIcon },
 ]
 
 export default function Home() {
