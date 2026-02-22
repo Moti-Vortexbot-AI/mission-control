@@ -1,17 +1,19 @@
 'use client'
 
 import { useState } from 'react'
-import { Calendar, CheckSquare, Users, Home as HomeIcon, FileText } from 'lucide-react'
+import { Calendar, CheckSquare, Users, Home as HomeIcon, FileText, Zap } from 'lucide-react'
 import TasksBoard from '@/components/TasksBoard'
 import CalendarView from '@/components/CalendarView'
 import MemoryUI from '@/components/MemoryUI'
 import TeamStructure from '@/components/TeamStructure'
 import OfficeView from '@/components/OfficeView'
+import SubAgentsView from '@/components/SubAgentsView'
 
 const tabs = [
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
   { id: 'calendar', label: 'Calendar', icon: Calendar },
   { id: 'memory', label: 'Memory', icon: FileText },
+  { id: 'agents', label: 'Sub-Agents', icon: Zap },
   { id: 'team', label: 'Team', icon: Users },
   { id: 'office', label: 'Office', icon: HomeIcon },
 ]
@@ -80,6 +82,7 @@ export default function Home() {
         {activeTab === 'tasks' && <TasksBoard />}
         {activeTab === 'calendar' && <CalendarView />}
         {activeTab === 'memory' && <MemoryUI />}
+        {activeTab === 'agents' && <SubAgentsView />}
         {activeTab === 'team' && <TeamStructure />}
         {activeTab === 'office' && <OfficeView />}
       </main>
